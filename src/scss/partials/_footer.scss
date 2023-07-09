@@ -6,12 +6,42 @@
   margin: {
     top: min(calc(13rem + 50vw), 30rem);
     inline: $margin-inline-main;
-    bottom: get-clamp(3rem, 5.3rem, 23.4375rem, 40rem);
+    bottom: 4rem;
+  }
+
+  &__wrapper {
+    @include mq(680px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    margin-right: auto;
+    max-width: 40ch;
   }
 
   &__nav {
-    margin-block: 2rem;
+    margin-block: 4rem;
     display: flex;
+    align-items: center;
     gap: 1.25rem;
+  }
+
+  &__social-link {
+    transition: transform 0.3s ease-in;
+
+    &:hover,
+    &:active {
+      transform: scale(1.15);
+
+      & .footer__social-icon {
+        fill: $clr-main;
+      }
+    }
+  }
+
+  &__social-icon {
+    transition: fill 0.2s ease-in;
   }
 }

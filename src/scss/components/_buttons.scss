@@ -7,31 +7,26 @@
   gap: 0.4em;
   min-width: 100%;
   padding: 1.175rem;
-
   border-radius: 0.75rem;
+  transition: background 0.3s ease-in;
 
   &-ios {
     margin-top: 1.1rem;
-    background-color: $clr-black;
+    background: $clr-black;
 
     &:hover,
     &:focus {
-      background-color: $clr-black-contrast;
-      color: $clr-black;
-
-      & .logo-ios {
-        fill: $clr-black;
-      }
+      background: $clr-black-contrast;
     }
   }
 
   &-android {
     margin-top: 1rem;
-    background-color: $clr-white;
+    background: $clr-white;
 
     &:hover,
     &:focus {
-      background-color: $clr-white-contrast;
+      background: $clr-white-contrast;
     }
   }
 }

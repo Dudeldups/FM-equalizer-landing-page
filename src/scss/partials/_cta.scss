@@ -8,19 +8,34 @@
     75% no-repeat;
   border-radius: 0.75rem;
 
+  @include mq(680px) {
+    margin-inline: $margin-inline-main;
+    background-image: url("../assets/images/bg-pattern-2.svg");
+  }
+
   &__img {
     position: absolute;
     inset: max(-25vw, -9rem) 0 auto;
     margin-inline: auto;
     max-width: max(55.7%, 13rem);
+
+    @include mq(680px) {
+      max-width: get-clamp(16.4rem, 19.5rem, 42.5rem, 62.5rem);
+      inset: -9rem auto auto 0;
+    }
   }
 
   &__inner-box {
-    position: relative;
-    bottom: max(calc(-7.5rem - 70vw), -30rem);
+    position: absolute;
+    bottom: max(calc(-4rem - 70vw), -25rem);
     padding: 3rem get-clamp(2.25rem, 3rem, 23.4375rem, 35rem);
     background-color: $clr-main;
     border-radius: 0.75rem;
+
+    @include mq(680px) {
+      max-width: 25rem;
+      inset: auto get-clamp(2rem, 6rem, 42.5rem, 60rem) -4rem auto;
+    }
   }
 
   &__desc {

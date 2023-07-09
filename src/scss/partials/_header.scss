@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.header {
+  margin: {
+    block: get-clamp(2.5rem, 3.87rem, 23.4375rem, 48rem);
+    inline: $margin-inline-main;
+  }
+}

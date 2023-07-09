@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+body {
+  background: $clr-white url("../assets/images/bg-main-mobile.png") top -13rem right -13rem
+    no-repeat;
+}

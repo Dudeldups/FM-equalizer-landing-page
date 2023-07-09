@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.cta {
+  margin-top: calc(4rem + 25vw);
+  position: relative;
+  background: $clr-black;
+
+  &__img {
+    position: absolute;
+    inset: -25vw 0;
+    margin-inline: auto;
+    max-width: max(55.7%, 13rem);
+  }
+
+  &__inner-box {
+    position: absolute;
+    background-color: $clr-main;
+  }
+}

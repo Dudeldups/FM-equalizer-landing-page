@@ -64,4 +64,110 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+@font-face {
+  font-family: "Plex Sans";
+  font-weight: 400;
+  src: url("../assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Plex Sans";
+  font-weight: 700;
+  src: url("../assets/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+}
+body {
+  font: 400 1rem "Plex Sans", sans-serif;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: 700;
+}
+
+.top-text {
+  color: #191826;
+}
+.top-text__title {
+  font-size: clamp(
+    2.5rem,
+    12.97vw + -0.54rem,
+    4rem
+  );
+  line-height: clamp(
+    3rem,
+    8.65vw + 0.97rem,
+    4rem
+  );
+}
+.top-text__desc {
+  font-size: clamp(
+    1rem,
+    2.74vw + 0.36rem,
+    1.13rem
+  );
+  line-height: clamp(
+    1.63rem,
+    2.74vw + 0.98rem,
+    1.75rem
+  );
+}
+
+.cta {
+  color: #fcfaf9;
+}
+.cta__title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+body {
+  background: #fcfaf9 url("../assets/images/bg-main-mobile.png") top -13rem right -13rem no-repeat;
+}
+
+.header {
+  margin-block: clamp(
+    2.5rem,
+    5.58vw + 1.19rem,
+    3.87rem
+  );
+  margin-inline: clamp(
+    1.5rem,
+    3.87vw + 0.59rem,
+    2.45rem
+  );
+}
+
+.top-text {
+  margin-block: clamp(
+    1.5rem,
+    2.32vw + 0.96rem,
+    2.07rem
+  );
+  margin-inline: clamp(
+    1.5rem,
+    3.87vw + 0.59rem,
+    2.45rem
+  );
+}
+.top-text__title {
+  max-width: 12ch;
+}
+.top-text__desc {
+  margin-top: 1.25rem;
+  max-width: 47ch;
+}
+
+.cta {
+  margin-top: calc(4rem + 25vw);
+  position: relative;
+  background: #191826;
+}
+.cta__img {
+  position: absolute;
+  inset: -25vw 0;
+  margin-inline: auto;
+  max-width: max(55.7%, 13rem);
+}
+.cta__inner-box {
+  position: absolute;
+  background-color: #fa7453;
 }/*# sourceMappingURL=main.css.map */

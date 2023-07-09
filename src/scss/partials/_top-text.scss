@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.top-text {
+  margin: {
+    block: get-clamp(1.5rem, 2.07rem, 23.4375rem, 48rem);
+    inline: $margin-inline-main;
+  }
+
+  &__title {
+    max-width: 12ch;
+  }
+
+  &__desc {
+    margin-top: 1.25rem;
+    max-width: 47ch;
+  }
+}

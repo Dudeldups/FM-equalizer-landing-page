@@ -1,0 +1,9 @@
+@use "functions" as *;
+
+$clr-main: #fa7453;
+$clr-black: #191826;
+$clr-white: #fcfaf9;
+$clr-black-contrast: #66e2dc;
+$clr-white-contrast: #ffb964;
+
+$margin-inline-main: get-clamp(1.5rem, 2.45rem, 23.4375rem, 48rem);

@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.footer {
+  display: grid;
+  gap: 2rem;
+  margin: {
+    top: min(calc(13rem + 50vw), 30rem);
+    inline: $margin-inline-main;
+    bottom: get-clamp(3rem, 5.3rem, 23.4375rem, 40rem);
+  }
+
+  &__nav {
+    margin-block: 2rem;
+    display: flex;
+    gap: 1.25rem;
+  }
+}

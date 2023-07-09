@@ -18,7 +18,7 @@
   &__inner-box {
     position: relative;
     bottom: max(calc(-7.5rem - 70vw), -30rem);
-    padding: 3rem get-clamp(2.25rem, 3rem, 23.4375rem, 48rem);
+    padding: 3rem get-clamp(2.25rem, 3rem, 23.4375rem, 35rem);
     background-color: $clr-main;
     border-radius: 0.75rem;
   }

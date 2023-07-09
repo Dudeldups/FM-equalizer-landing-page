@@ -141,6 +141,12 @@ body {
   color: #191826;
 }
 
+.footer__email {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+
 body {
   background: #fcfaf9 url("../assets/images/bg-main-mobile.png") top -13rem right -13rem no-repeat;
   max-width: 32rem;
@@ -198,7 +204,7 @@ body {
   bottom: max(-7.5rem - 70vw, -30rem);
   padding: 3rem clamp(
     2.25rem,
-    3.05vw + 1.53rem,
+    6.49vw + 0.73rem,
     3rem
   );
   background-color: #fa7453;
@@ -214,6 +220,27 @@ body {
 }
 .cta__amount {
   margin-right: 1rem;
+}
+
+.footer {
+  display: grid;
+  gap: 2rem;
+  margin-top: min(13rem + 50vw, 30rem);
+  margin-inline: clamp(
+    1.5rem,
+    3.87vw + 0.59rem,
+    2.45rem
+  );
+  margin-bottom: clamp(
+    3rem,
+    13.89vw + -0.25rem,
+    5.3rem
+  );
+}
+.footer__nav {
+  margin-block: 2rem;
+  display: flex;
+  gap: 1.25rem;
 }
 
 .btn {

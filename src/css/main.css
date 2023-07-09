@@ -118,9 +118,33 @@ body {
   font-size: 2rem;
   line-height: 2.5rem;
 }
+.cta__desc {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.cta__price {
+  font-size: 1.25rem;
+}
+.cta__amount {
+  font-size: 4.0625rem;
+  font-weight: 700;
+}
+
+.btn {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.btn-ios {
+  color: #fcfaf9;
+}
+.btn-ios:hover, .btn-ios:focus {
+  color: #191826;
+}
 
 body {
   background: #fcfaf9 url("../assets/images/bg-main-mobile.png") top -13rem right -13rem no-repeat;
+  max-width: 32rem;
+  margin: 0 auto;
 }
 
 .header {
@@ -157,17 +181,65 @@ body {
 }
 
 .cta {
-  margin-top: calc(4rem + 25vw);
+  margin-top: min(4rem + 25vw, 13rem);
+  height: 37.5rem;
   position: relative;
-  background: #191826;
+  background: #191826 url("../assets/images/bg-pattern-2.svg") top center/75% no-repeat;
+  border-radius: 0.75rem;
 }
 .cta__img {
   position: absolute;
-  inset: -25vw 0;
+  inset: max(-25vw, -9rem) 0 auto;
   margin-inline: auto;
   max-width: max(55.7%, 13rem);
 }
 .cta__inner-box {
-  position: absolute;
+  position: relative;
+  bottom: max(-7.5rem - 70vw, -30rem);
+  padding: 3rem clamp(
+    2.25rem,
+    3.05vw + 1.53rem,
+    3rem
+  );
   background-color: #fa7453;
+  border-radius: 0.75rem;
+}
+.cta__desc {
+  margin-top: 0.75rem;
+}
+.cta__price {
+  display: flex;
+  align-items: center;
+  margin-top: 1.1rem;
+}
+.cta__amount {
+  margin-right: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  min-width: 100%;
+  padding: 1.175rem;
+  border-radius: 0.75rem;
+}
+.btn-ios {
+  margin-top: 1.1rem;
+  background-color: #191826;
+}
+.btn-ios:hover, .btn-ios:focus {
+  background-color: #66e2dc;
+  color: #191826;
+}
+.btn-ios:hover .logo-ios, .btn-ios:focus .logo-ios {
+  fill: #191826;
+}
+.btn-android {
+  margin-top: 1rem;
+  background-color: #fcfaf9;
+}
+.btn-android:hover, .btn-android:focus {
+  background-color: #ffb964;
 }/*# sourceMappingURL=main.css.map */

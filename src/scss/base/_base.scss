@@ -3,4 +3,6 @@
 body {
   background: $clr-white url("../assets/images/bg-main-mobile.png") top -13rem right -13rem
     no-repeat;
+  max-width: 32rem;
+  margin: 0 auto;
 }

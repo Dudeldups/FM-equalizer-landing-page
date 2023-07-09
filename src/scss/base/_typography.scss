@@ -45,4 +45,36 @@ body {
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
+  &__desc {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  &__price {
+    font-size: 1.25rem;
+  }
+
+  &__amount {
+    font: {
+      size: 4.0625rem;
+      weight: 700;
+    }
+  }
+}
+
+.btn {
+  font: {
+    size: 1.125rem;
+    weight: 700;
+  }
+
+  &-ios {
+    color: $clr-white;
+
+    &:hover,
+    &:focus {
+      color: $clr-black;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .cta {
-  margin-top: min(calc(4rem + 25vw), 13rem);
+  margin-top: min(calc(4rem + 25vw), 17rem);
   height: 37.5rem;
   position: relative;
   background: $clr-black url("../assets/images/bg-pattern-2.svg") top center /

@@ -8,5 +8,16 @@ body {
 
   @include mq(680px) {
     max-width: 74rem;
+    background: {
+      image: url("../assets/images/bg-pattern-1.svg"),
+        url("../assets/images/bg-main-tablet.png");
+      position: top -3% right, top -13rem right -10rem;
+      size: min(30vw, 20rem), auto;
+    }
+  }
+
+  @include mq(950px) {
+    background-image: url("../assets/images/bg-pattern-1.svg"),
+      url("../assets/images/bg-main-desktop.png");
   }
 }

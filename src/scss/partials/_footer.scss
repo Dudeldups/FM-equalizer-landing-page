@@ -9,6 +9,10 @@
     bottom: 4rem;
   }
 
+  @include mq(680px) {
+    margin-top: 10.5rem;
+  }
+
   @include mq(950px) {
     grid-template-columns: auto 1fr;
     align-items: center;

@@ -2,16 +2,24 @@
 
 .top-text {
   margin: {
-    block: get-clamp(1.5rem, 2.07rem, 23.4375rem, 48rem);
+    block: get-clamp(1.5rem, 8rem, 23.4375rem, 60rem);
     inline: $margin-inline-main;
   }
 
   &__title {
     max-width: 12ch;
+
+    @include mq(1260px) {
+      max-width: 18ch;
+    }
   }
 
   &__desc {
-    margin-top: 1.25rem;
+    margin-top: get-clamp(1.25rem, 2rem, 45rem, 60rem);
     max-width: 47ch;
+
+    @include mq(1260px) {
+      max-width: 70ch;
+    }
   }
 }

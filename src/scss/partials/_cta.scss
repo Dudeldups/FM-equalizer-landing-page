@@ -5,12 +5,12 @@
   height: 37.5rem;
   position: relative;
   background: $clr-black url("../assets/images/bg-pattern-2.svg") top center /
-    75% no-repeat;
+    min(75%, 20rem) no-repeat;
   border-radius: 0.75rem;
 
   @include mq(680px) {
     margin-inline: $margin-inline-main;
-    background-image: url("../assets/images/bg-pattern-2.svg");
+    background-position: min(50%, 20rem) -37%;
   }
 
   &__img {
@@ -21,25 +21,26 @@
 
     @include mq(680px) {
       max-width: get-clamp(16.4rem, 19.5rem, 42.5rem, 62.5rem);
-      inset: -9rem auto auto 0;
+      inset: -9rem auto auto get-clamp(2rem, 6.38rem, 42.5rem, 60rem);
     }
   }
 
   &__inner-box {
     position: absolute;
     bottom: max(calc(-4rem - 70vw), -25rem);
-    padding: 3rem get-clamp(2.25rem, 3rem, 23.4375rem, 35rem);
+    padding: get-clamp(3rem, 4rem, 48rem, 59.375rem)
+      get-clamp(2.25rem, 3.5rem, 23.4375rem, 59.375rem) 3rem;
     background-color: $clr-main;
     border-radius: 0.75rem;
 
     @include mq(680px) {
-      max-width: 25rem;
-      inset: auto get-clamp(2rem, 6rem, 42.5rem, 60rem) -4rem auto;
+      max-width: get-clamp(25rem, 27.875rem, 48rem, 59.375rem);
+      inset: auto get-clamp(2rem, 5.85rem, 42.5rem, 60rem) -7.25rem auto;
     }
   }
 
   &__desc {
-    margin-top: 0.75rem;
+    margin-top: get-clamp(0.75rem, 1.75rem, 42.5rem, 59.375rem);
   }
 
   &__price {

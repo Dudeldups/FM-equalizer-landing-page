@@ -9,22 +9,30 @@
     bottom: 4rem;
   }
 
+  @include mq(950px) {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 6.6rem;
+  }
+
   &__wrapper {
     @include mq(680px) {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
   }
 
   &__text {
-    margin-right: auto;
     max-width: 40ch;
   }
 
   &__nav {
     margin-block: 4rem;
     display: flex;
-    align-items: center;
     gap: 1.25rem;
   }
 

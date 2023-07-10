@@ -42,13 +42,13 @@ body {
   color: $clr-white;
 
   &__title {
-    font-size: 2rem;
+    font-size: get-clamp(2rem, 2.5rem, 48rem, 59.375rem);
     line-height: 2.5rem;
   }
 
   &__desc {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: get-clamp(1.125rem, 1.25rem, 48rem, 59.375rem);
+    line-height: get-clamp(1.75rem, 2.125rem, 48rem, 59.375rem);
   }
 
   &__price {
@@ -72,9 +72,15 @@ body {
   &-ios {
     color: $clr-white;
   }
+
+  &-android {
+    color: $clr-black;
+  }
 }
 
 .footer {
+  color: $clr-black;
+
   &__text {
     font-size: 1rem;
     line-height: 1.625rem;
@@ -86,5 +92,7 @@ body {
       weight: 700;
     }
     line-height: 1.625rem;
+    text-decoration: none;
+    color: inherit;
   }
 }

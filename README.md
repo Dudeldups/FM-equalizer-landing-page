@@ -19,7 +19,7 @@ This is a solution to the [Equalizer landing page challenge on Frontend Mentor](
 
 ### Links
 
-- [Solution on Frontend Mentor]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/scss-equalizer-landing-page-BgZb8zbqgl)
 - [Live site](https://dudeldups.github.io/FM-equalizer-landing-page/)
 
 ## My process
